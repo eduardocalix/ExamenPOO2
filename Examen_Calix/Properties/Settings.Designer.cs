@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Examen2_Eduardo.Properties
+namespace Examen_Calix.Properties
 {
 
 

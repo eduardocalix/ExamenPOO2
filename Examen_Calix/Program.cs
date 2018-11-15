@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Examen2_Eduardo
+namespace Examen_Calix
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Examen2_Eduardo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmInicio());
         }
     }
 }

@@ -8,13 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Examen2_Eduardo
+namespace Examen_Calix
 {
-    public partial class Form1 : Form
+    public partial class frmEliminarCancion : Form
     {
-        public Form1()
+        public frmEliminarCancion()
         {
             InitializeComponent();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            Models.Cancion cancion = new Models.Cancion();
+                
         }
     }
 }

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C66BE9FC-669F-4CB2-A7F1-EAE400E84249}</ProjectGuid>
+    <ProjectGuid>{CDE55234-C235-45D7-A95F-59FD0FD77908}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Examen2_Eduardo</RootNamespace>
-    <AssemblyName>Examen2_Eduardo</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>Examen_Calix</RootNamespace>
+    <AssemblyName>Examen_Calix</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
@@ -51,8 +51,42 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAgregarCancion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarCancion.Designer.cs">
+      <DependentUpon>frmAgregarCancion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminarCancion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarCancion.Designer.cs">
+      <DependentUpon>frmEliminarCancion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerCancion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerCancion.Designer.cs">
+      <DependentUpon>frmVerCancion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Album.cs" />
+    <Compile Include="Models\Artista.cs" />
+    <Compile Include="Models\Cancion.cs" />
+    <Compile Include="Models\Conexion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarCancion.resx">
+      <DependentUpon>frmAgregarCancion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarCancion.resx">
+      <DependentUpon>frmEliminarCancion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerCancion.resx">
+      <DependentUpon>frmVerCancion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -61,6 +95,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -74,6 +109,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\Querys\StoreProcedure.sql" />
+    <None Include="Resources\descarga.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
